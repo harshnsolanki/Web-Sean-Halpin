@@ -1,14 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap');
 
 *{
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #e0ebe8;
 }
 
 header{
     height: 120px;
     width: 100vw;
-    background-color: yellow;
     display: flex;
     align-items: center;
 }
@@ -29,6 +34,8 @@ header{
     align-items: center;
     font-family: 'Noto Sans JP', sans-serif;
     font-size: larger;
+    color: #45b29a;
+    font-weight: bold;
 }
 
 .menu-icons li{
@@ -42,16 +49,26 @@ header{
     flex-direction: column;
     height: 200px;
     width: 100vw;
-    background-color: blueviolet;
 }
 
 .head-title-image{
+    margin-top: 20px;
     align-content: center;
     height: 100px;
 }
 
 .head-title-text{
-    margin-top:50px;
-    font-family: 'Noto Sans JP', sans-serif;
+    margin-top:65px;
+    font-family: 'Zen Tokyo Zoo', cursive;
     font-size: larger;
+    color: #45b29a;
+    letter-spacing: 0.4ch;
+}
+
+.block-bg{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    height: 350px;
+    width: 100vw;
 }
