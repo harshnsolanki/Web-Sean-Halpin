@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
 
 *{
     padding: 0px;
@@ -32,10 +32,10 @@ header{
     display: flex;
     margin-left: 300px;
     align-items: center;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Otomanopee One', sans-serif;
     font-size: larger;
     color: #45b29a;
-    font-weight: bold;
+    letter-spacing: 1.1px;
 }
 
 .menu-icons li{
@@ -63,6 +63,18 @@ header{
     font-size: larger;
     color: #45b29a;
     letter-spacing: 0.4ch;
+}
+
+.left-cloud{
+    position: relative;
+    right: 530px;
+    top: 8px;
+}
+
+.right-cloud{
+    position: relative;
+    left: 530px;
+    top: 80px;
 }
 
 .block-bg{
