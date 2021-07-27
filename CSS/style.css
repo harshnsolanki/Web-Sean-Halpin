@@ -38,6 +38,11 @@ header{
     letter-spacing: 1.1px;
 }
 
+.menu-icons li:hover{
+    color: #545454;
+    cursor: pointer;
+}
+
 .menu-icons li{
     margin: 0px 30px;
 }
