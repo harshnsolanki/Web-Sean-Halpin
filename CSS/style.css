@@ -1,41 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
 
+
 *{
-    padding: 0px;
     margin: 0px;
+    padding: 0px;
+}
+
+.main{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(170, 120, 55, 0.507);
+}
+
+.main header{
+    display: flex;
+    height: 125px;
+    width: 100vW;
+    background-color: #E0EBE8;
+    color: #45b29a;
     box-sizing: border-box;
 }
 
-body{
-    background-color: #e0ebe8;
-}
-
-header{
-    height: 120px;
-    width: 100vw;
+.main header .logo{
+    height: 125px;
+    width: 40%;
     display: flex;
+    justify-content: center;
     align-items: center;
+    
 }
 
-.logo{
-    margin: 0px 300px;
-}
-
-.me{
+.main header .logo img{
     height: 80px;
     width: 80px;
 }
 
-.menu-icons{
-    list-style: none;
+.main header .menu-icons{
     display: flex;
-    margin-left: 300px;
     align-items: center;
-    font-family: 'Otomanopee One', sans-serif;
-    font-size: larger;
-    color: #45b29a;
-    letter-spacing: 1.1px;
+    margin-left: 150px;
 }
 
 .menu-icons li:hover{
@@ -43,49 +47,44 @@ header{
     cursor: pointer;
 }
 
-.menu-icons li{
-    margin: 0px 30px;
+.main header .menu-icons li{
+    margin: 0px 60px;
+    list-style: none;
+    font-family: 'Otomanopee One', sans-serif;
+    font-size: 21px;
+    letter-spacing: 0.4px;
 }
 
-.head-title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 200px;
-    width: 100vw;
+.main .head-title{
+    background-color: #E0EBE8;
+    height: 300px;
+    max-width: 100vw;
+    box-sizing: border-box;
 }
 
-.head-title-image{
-    margin-top: 20px;
-    align-content: center;
-    height: 100px;
+.main .head-title .head-title-image{
+    margin-left: 600px;
+    margin-top: 50px;
 }
 
-.head-title-text{
-    margin-top:65px;
+.main .head-title .left-cloud{
+    position: relative;
+    top:100px;
+    right: 750px;
+}
+
+.main .head-title .right-cloud{
+    position: relative;
+    top:-25px;
+    left: 90px;
+}
+
+.main .head-title .head-title-text{
+    position: relative;
+    top:30px;
+    left: 590px;
+    color: #45b29a;
     font-family: 'Zen Tokyo Zoo', cursive;
     font-size: larger;
-    color: #45b29a;
     letter-spacing: 0.4ch;
-}
-
-.left-cloud{
-    position: relative;
-    right: 530px;
-    top: 8px;
-}
-
-.right-cloud{
-    position: relative;
-    left: 530px;
-    top: 80px;
-}
-
-.block-bg{
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    height: 350px;
-    width: 100vw;
 }
