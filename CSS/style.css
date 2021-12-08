@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
 
 
 *{
@@ -10,7 +15,6 @@
 .main{
     height: 100vh;
     width: 100%;
-    background-color: rgba(170, 120, 55, 0.507);
 }
 
 .main header{
@@ -99,5 +103,213 @@
     background-color: #E0EBE8;
 }
 
-.main .block-bg img{
+
+/*-----> Middle Part <-----*/
+
+.middle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: 100%;
+}
+
+.middle .my-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width:500px;
+}
+
+/* .middle .my-info  */
+.image{
+    height: 150px;
+    width: 150px;
+}
+
+.middle .my-info .hi{
+    color: #45b29a;
+    margin-top: 30px;
+    font-family: 'Readex Pro', sans-serif;
+    font-size: 25px;
+}
+
+.middle .my-info .info-text{
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 17px;
+    font-weight: lighter;
+}
+
+.middle-extra{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* background-color:darkgray; */
+    height: 1500px;
+    width: 100%;
+}
+
+.middle-extra .extra-info{
+    font-family: 'Lora', serif;
+    color: #45b29a;
+    letter-spacing: 0.7px;
+    word-spacing: 4px;
+    font-size: 25px;
+    /* margin-bottom: 120px; */
+    /* background-color: red; */
+}
+
+.language-code{
+    display: flex;
+    /* background-color: blue; */
+}
+
+.language-code div{
+    margin: 0px 50px;
+}
+
+.inner-language-code{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-language-code h2{
+    color: #45b29a;
+    margin: 15px 0px;
+}
+
+/*New Block*/
+
+.frameworks-know{
+    display: flex;
+    /* background-color: purple; */
+}
+
+.inner-frameworks-know{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.frameworks-know div{
+    margin: 0px 50px; 
+}
+
+.inner-frameworks-know h2{
+    color: #45b29a;
+    margin: 15px 0px;
+}
+
+/*New Block*/
+
+.tools-use{
+    display: flex;
+    /* background-color: darkgoldenrod; */
+}
+
+.inner-tools-use{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}
+
+.tools-use div{
+    margin: 0px 50px;
+}   
+
+.inner-tools-use h2{
+    color: #45b29a;
+    margin: 15px 0px;
+}
+
+.extra-info,.language-code,.frameworks-know,.tools-use{
+    margin: 50px 0px;
+}
+
+.help-text{
+    margin: 50px 0px 0px 0px;
+    font-family: 'Lora', serif;
+    color: #45b29a;
+    letter-spacing: 0.7px;
+    word-spacing: 4px;
+    font-size: 25px;
+}
+
+.current-available{
+    font-size: 17px;
+    margin: 60px 0px;
+    color:#45b29a;
+    font-family: 'Nanum Gothic', sans-serif;
+    letter-spacing: 0.5px;
+    word-spacing: 1.5px;
+}
+
+.get-in-touch{
+    font-size: 19px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.btn{
+    margin: 60px 0px;
+}
+.btn input{
+    height: 40px;
+    width: 180px;
+    font-size: 15px;
+    background-color: #a5eedd;
+    border-radius: 3.5px;
+}
+
+
+/*------> Footer <------ */
+
+.footer{
+    height: 180px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #c5ded7;
+}
+
+.footer-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-icons h3{
+    margin:0px 50px;
+    font-size: 19px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #45b29a;
+}
+
+.footer-icons h3:hover{
+    color: #353232;
+    cursor: pointer;
+}
+
+.last-text{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family:'Lora', serif;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: #2a8f79;
 }
