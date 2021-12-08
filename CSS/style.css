@@ -9,14 +9,14 @@
 
 .main{
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-color: rgba(170, 120, 55, 0.507);
 }
 
 .main header{
     display: flex;
     height: 125px;
-    width: 100vW;
+    width: 100%;
     background-color: #E0EBE8;
     color: #45b29a;
     box-sizing: border-box;
@@ -57,9 +57,10 @@
 
 .main .head-title{
     background-color: #E0EBE8;
-    height: 300px;
-    max-width: 100vw;
+    height: 250px;
+    width: 100%;
     box-sizing: border-box;
+    /* position:absolute; */
 }
 
 .main .head-title .head-title-image{
@@ -76,15 +77,27 @@
 .main .head-title .right-cloud{
     position: relative;
     top:-25px;
-    left: 90px;
+    left: 85px;
 }
 
 .main .head-title .head-title-text{
     position: relative;
-    top:30px;
+    top:30px; 
+    display: inline-block;
     left: 590px;
     color: #45b29a;
     font-family: 'Zen Tokyo Zoo', cursive;
     font-size: larger;
     letter-spacing: 0.4ch;
+}
+
+.main .block-bg{
+    display: flex;
+    justify-content: center;
+    height: 346px;
+    width: 100%;
+    background-color: #E0EBE8;
+}
+
+.main .block-bg img{
 }
