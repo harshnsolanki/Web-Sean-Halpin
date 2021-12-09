@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap');
 
 
 *{
@@ -24,6 +25,14 @@
     background-color: #E0EBE8;
     color: #45b29a;
     box-sizing: border-box;
+    transition: 0.5s cubic-bezier(0.36, 0.53, 0.49, 0.83);
+}
+
+.main header:hover{
+    background: #fff;
+    border: 0.01px solid whitesmoke;
+    box-sizing: border-box;
+    box-shadow:inset 0px 1px 2px 0.5px rgba(0, 0, 0, 0.35);
 }
 
 .main header .logo{
@@ -139,8 +148,8 @@
 .middle .my-info .info-text{
     margin-top: 30px;
     text-align: center;
-    font-family: 'Libre Baskerville', serif;
-    font-size: 17px;
+    font-family: 'PT Serif', serif;
+    font-size: 16px;
     font-weight: lighter;
 }
 
@@ -155,11 +164,12 @@
 }
 
 .middle-extra .extra-info{
-    font-family: 'Lora', serif;
+    font-family: 'Pacifico', cursive;
     color: #45b29a;
     letter-spacing: 0.7px;
     word-spacing: 4px;
     font-size: 25px;
+    font-weight: lighter;
     /* margin-bottom: 120px; */
     /* background-color: red; */
 }
@@ -173,6 +183,13 @@
     margin: 0px 50px;
 }
 
+.language-code div{
+    /* background-image: url(/Images/line-bg.png); */
+    /* background-repeat: repeat-x; */
+    /* background-position: center; */
+    /* position: relative; */
+}
+
 .inner-language-code{
     display: flex;
     flex-direction: column;
@@ -183,6 +200,42 @@
 .inner-language-code h2{
     color: #45b29a;
     margin: 15px 0px;
+}
+
+.div-vert-icon{
+    background-color: #F3F2F1;
+    height: 77px;
+    width: 77px;
+    border-radius: 60px;
+    overflow: hidden;
+    position: relative;
+    top:35px;
+}
+
+.div-vert-icon img{
+    position: relative;
+    animation-name: first-vert-icon;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(1, 0.38, 0.32, 0.64);
+}
+
+@keyframes first-vert-icon {
+    0%{
+        top:0px;
+    }
+    33%{
+        top:-70px;
+    }
+    100%{
+        top: -150px;
+    }
+}
+
+.language-code-vert-icon img{
+    height: 77px;
+    width: 77px;
 }
 
 /*New Block*/
@@ -208,12 +261,51 @@
     margin: 15px 0px;
 }
 
+.div-dev-icon{
+    background-color: #F3F2F1;
+    height: 77px;
+    width: 77px;
+    overflow: hidden;
+    position: relative;
+    top:35px;
+    border-radius: 60px;
+}
+
+.div-dev-icon img{
+    animation-name: first-vert-icon;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    position: relative;
+    animation-timing-function: cubic-bezier(1, 0.38, 0.32, 0.64);
+}
+
 /*New Block*/
 
 .tools-use{
     display: flex;
     /* background-color: darkgoldenrod; */
 }
+
+.div-tools-icon{
+    background-color: #F3F2F1;
+    height: 77px;
+    width: 77px;
+    overflow: hidden;
+    position: relative;
+    top:35px;
+    border-radius: 60px;
+}
+
+.div-tools-icon img{
+    animation-name: first-vert-icon;
+    animation-duration: 3.7s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    position: relative;
+    animation-timing-function: cubic-bezier(1, 0.38, 0.32, 0.64);
+}
+
 
 .inner-tools-use{
     display: flex;
@@ -236,8 +328,8 @@
 }
 
 .help-text{
+    font-family: 'Merriweather Sans', sans-serif;
     margin: 50px 0px 0px 0px;
-    font-family: 'Lora', serif;
     color: #45b29a;
     letter-spacing: 0.7px;
     word-spacing: 4px;
@@ -248,7 +340,7 @@
     font-size: 17px;
     margin: 60px 0px;
     color:#45b29a;
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Fuzzy Bubbles', cursive;
     letter-spacing: 0.5px;
     word-spacing: 1.5px;
 }
