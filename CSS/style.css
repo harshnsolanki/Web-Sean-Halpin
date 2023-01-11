@@ -11,6 +11,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 .main{
@@ -24,14 +25,12 @@
     width: 100%;
     background-color: #E0EBE8;
     color: #45b29a;
-    box-sizing: border-box;
     transition: 0.5s cubic-bezier(0.36, 0.53, 0.49, 0.83);
 }
 
 .main header:hover{
     background: #fff;
     border: 0.01px solid whitesmoke;
-    box-sizing: border-box;
     box-shadow:inset 0px 1px 2px 0.5px rgba(0, 0, 0, 0.35);
 }
 
@@ -41,7 +40,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .main header .logo img{
@@ -93,7 +91,7 @@
     left: 85px;
 }
 
-.main .head-title .head-title-text{
+/* .main .head-title .head-title-text{
     position: relative;
     top:30px; 
     display: inline-block;
@@ -102,12 +100,23 @@
     font-family: 'Zen Tokyo Zoo', cursive;
     font-size: larger;
     letter-spacing: 0.4ch;
+} */
+
+.main .head-title .main-head-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #45b29a;
+    margin: 50px 0px;
+    font-family: 'Zen Tokyo Zoo', cursive;
+    font-size: larger;
+    letter-spacing: 0.4ch;
 }
 
 .main .block-bg{
     display: flex;
     justify-content: center;
-    height: 346px;
+    height: 372px;
     width: 100%;
     background-color: #E0EBE8;
 }
